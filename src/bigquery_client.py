@@ -8,9 +8,9 @@ from google.cloud.exceptions import NotFound, GoogleCloudError
 
 logger = logging.getLogger(__name__)
 
-DATASET_NAME = "dataform_qaguard"
+DATASET_NAME = "dataform_assguard"
 TABLE_NAME = "assertion_data"
-SYNTHESIS_VIEW_SUFFIX = "c"
+SYNTHESIS_VIEW_SUFFIX = "_synthesis_by_assertion"
 RECAP_VIEW_SUFFIX = "_recap_by_day_view"
 
 def get_bigquery_client(credentials, project_id: str) -> Client:
