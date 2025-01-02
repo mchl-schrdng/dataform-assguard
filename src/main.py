@@ -37,7 +37,7 @@ def main() -> None:
     except Exception as e:
         logger.error(f"Failed to initialize BigQuery client: {e}")
         return
-    fq = f"{p}.dataform_qaguard.assertion_data"
+    fq = f"{p}.dataform_assguard.assertion_data"
     try:
         pi = get_processed_invocations(cl, fq)
     except Exception as e:
