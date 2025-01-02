@@ -1,4 +1,4 @@
-# dataform-qaguard
+# dataform-assguard
 
 This repository is a **personal side project** aimed at monitoring and analyzing the quality of assertions in Dataform workflows using Google Cloud Platform (GCP) services. The project focuses on automating the process of fetching, storing, and visualizing assertion-related data for improved insights and quality control.
 
@@ -24,7 +24,7 @@ The `dataform_api.py` module connects to the Dataform API to fetch workflow invo
 - Failure reasons (if any)
 
 ### 3. **Data Storage**
-The extracted data is loaded into a BigQuery table (`dataform_qaguard.assertion_data`) using the `load_to_bigquery` function in `bigquery_client.py`. The table schema includes:
+The extracted data is loaded into a BigQuery table (`dataform_assguard.assertion_data`) using the `load_to_bigquery` function in `bigquery_client.py`. The table schema includes:
 - **Start_Time**, **End_Time**
 - **Invocation_Name**, **Action_Name**
 - **Database**, **Schema**
@@ -46,7 +46,7 @@ These views are created using SQL `CREATE OR REPLACE VIEW` statements in `bigque
 
 1. **Python 3.9+**: Install required dependencies from `requirements.txt`.
 2. **Google Cloud Credentials**: A valid GCP service account with access to Dataform and BigQuery.
-3. **BigQuery Dataset**: Ensure a dataset (`dataform_qaguard`) exists in your GCP project.
+3. **BigQuery Dataset**: Ensure a dataset (`dataform_assguard`) exists in your GCP project.
 
 ## Key Features
 
