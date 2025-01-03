@@ -41,6 +41,5 @@ jobs:
           PROJECT_ID: ${{ secrets.PROJECT_ID }}
           LOCATION: ${{ secrets.LOCATION }}
           REPOSITORY_ID: ${{ secrets.REPOSITORY_ID }}
-          BIGQUERY_TABLE_ID: ${{ secrets.BIGQUERY_TABLE_ID }}
         run: |
           python src/main.py
